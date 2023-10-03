@@ -1,0 +1,244 @@
+//main container
+.signup-cover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+//welcome
+.signup-welcome-cover {
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+.signup-welcome-text {
+  padding-bottom: 0px !important;
+  margin-bottom: 25px;
+  color: rgba(186, 178, 241, 0.632);
+}
+
+//email signup container
+
+.signup-email-cover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signup-email-body,
+.signup-password-body,
+.signup-confirm-password-body {
+  position: relative;
+  height: 20px;
+  width: 65%;
+  margin-top: 15px;
+  border: 1px solid rgba(80, 79, 101, 0.801);
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.signup-error-message {
+  height: 3px;
+  min-width: 65%;
+  font-size: 10px;
+  text-align: start;
+  color: rgba(248, 119, 119, 0.62);
+}
+
+.signup-password-text,
+.signup-email-text,
+.signup-confirm-password-text {
+  display: span;
+  position: absolute;
+  z-index: 1;
+  top: -8px;
+  left: 11px;
+  background-color: hsl(240, 23%, 12%);
+  padding: 0 5px;
+  color: rgba(80, 79, 101, 0.681);
+}
+
+.signup-password-input,
+.signup-email-input,
+.signup-confirm-password-input {
+  height: 80%;
+  width: 88%;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 2px;
+  background-color: hsl(240, 23%, 12%) !important;
+  &:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px hsl(240, 23%, 12%) inset;
+    -webkit-background-fill-color: hsl(240, 23%, 12%);
+  }
+  color: rgba(186, 178, 241, 0.522);
+}
+
+.password-show-hide-icon {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  right: 5px;
+}
+
+.signup-button-cover {
+  margin-top: 10px;
+  width: 65%;
+}
+
+//or block
+.signup-or-text {
+  text-align: center;
+  font-size: 10px;
+  margin: 5px 0;
+  color: rgba(186, 178, 241, 0.632);
+}
+
+//google signup container
+.signup-google-cover {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+//already account part
+
+.signup-already-text-cover {
+  margin-top: 4px;
+  cursor: pointer;
+  color: rgba(186, 178, 241, 0.632);
+  &:hover {
+    color: rgba(186, 178, 241, 0.82);
+  }
+  font-size: 10px;
+}
+
+@media screen and (min-width: 540px) {
+  .signup-email-body,
+  .signup-password-body,
+  .signup-confirm-password-body,
+  .signup-button-cover,
+  .signup-google-cover {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .password-show-hide-icon {
+    right: -1px;
+  }
+
+  .signup-error-message {
+    height: 10px;
+    min-width: 60%;
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .signup-email-body,
+  .signup-password-body,
+  .signup-confirm-password-body,
+  .signup-button-cover,
+  .signup-google-cover {
+    width: 50%;
+    font-size: 18px;
+    height: 40px;
+  }
+
+  .signup-error-message {
+    min-width: 50%;
+    height: 17px;
+    font-size: 12px;
+  }
+
+  .signup-welcome-cover {
+    position: relative;
+    left: -5px;
+    font-size: 20px;
+  }
+
+  .signup-password-input,
+  .signup-email-input,
+  .signup-confirm-password-input {
+    font-size: 18px;
+  }
+
+  .password-show-hide-icon {
+    right: 2px;
+    top: 2px;
+  }
+
+  .signup-password-text,
+  .signup-email-text,
+  .signup-confirm-password-text {
+    top: -13px;
+  }
+
+  .signup-or-text {
+    font-size: 22px;
+  }
+  .signup-already-text-cover {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .signup-email-body,
+  .signup-password-body,
+  .signup-confirm-password-body,
+  .signup-button-cover,
+  .signup-google-cover {
+    width: 30%;
+    margin-top: 12px;
+    font-size: 15px;
+    height: 40px;
+  }
+
+  .signup-error-message {
+    height: 15px;
+    min-width: 30%;
+    font-size: 15px;
+  }
+
+  .signup-password-text,
+  .signup-email-text,
+  .signup-confirm-password-text {
+    top: -11px;
+  }
+
+  .signup-password-input,
+  .signup-email-input,
+  .signup-confirm-password-input {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .password-show-hide-icon {
+    right: 5px;
+  }
+
+  .signup-welcome-cover {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  .signup-already-text-cover {
+    margin-bottom: 32px;
+    margin-bottom: 0px;
+  }
+
+  .signup-or-text {
+    font-size: 14px;
+  }
+
+  .signup-already-text-cover {
+    display: none;
+  }
+}

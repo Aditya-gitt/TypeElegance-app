@@ -1,0 +1,55 @@
+.login-button-body {
+  width: 100%;
+  border: 1px solid rgba(186, 178, 241, 0.632);
+  border-radius: 3px;
+  color: rgba(186, 178, 241, 0.632);
+  height: 20px;
+  text-align: center;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    color: rgb(186, 178, 241);
+  }
+  align-items: center;
+}
+
+.login-button-text {
+  position: relative;
+  margin: 4px !important;
+}
+
+.logn-button-icon {
+  display: inline-block;
+  position: relative;
+  left: -5px;
+  top: 2px;
+}
+
+.logn-button-icon2 {
+  display: inline-block;
+  position: relative;
+  left: -1px;
+  top: 2px;
+}
+
+@media screen and (min-width: 764px) {
+  .login-button-body {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .login-button-body {
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .logn-button-icon {
+    position: relative;
+    left: -8px;
+    top: 3px;
+  }
+}

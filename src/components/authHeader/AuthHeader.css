@@ -1,0 +1,79 @@
+.auth-header-cover {
+  font-size: 18px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-header-logo-cover {
+  display: none;
+}
+.auth-header-name-cover {
+  text-align: center;
+}
+
+.auth-header-acc-exist {
+  display: none;
+  cursor: pointer;
+  color: rgba(186, 178, 241, 0.632);
+  &:hover {
+    color: rgba(186, 178, 241, 0.82);
+  }
+}
+
+.auth-header-acc-exist-text {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.auth-header-name-text {
+  display: inline;
+  cursor: pointer;
+  color: rgba(186, 178, 241, 0.632);
+  &:hover {
+    color: rgba(186, 178, 241, 0.82);
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .auth-header-name-cover {
+    width: 33%;
+  }
+
+  .auth-header-cover {
+    font-size: 30px;
+    justify-content: flex-start;
+  }
+
+  .auth-header-logo-cover {
+    display: inline;
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .auth-header-name-cover {
+    width: 73%;
+    text-align: start;
+  }
+
+  .auth-header-cover {
+    font-size: 30px;
+    justify-content: flex-start;
+  }
+
+  .auth-header-logo-cover {
+    display: inline-block;
+    width: 8%;
+  }
+
+  .auth-header-acc-exist {
+    display: inline-block;
+  }
+
+  .auth-header-acc-exist-text {
+    font-size: 13px;
+  }
+}
